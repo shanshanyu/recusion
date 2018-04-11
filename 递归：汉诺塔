@@ -11,3 +11,29 @@ void move(int n,int x,int y,int z){
 int main(){
 
 }
+/*以n=3为例：
+第一步执行：move(2,x,z,y)   x=A,y=B,z=C   也就是move(2,A,C,B)
+
+此时n=2,  x=A,y=C,z=B 
+再执行：mov(1,x,z,y)   也就是mov(1,A,B,C)  A-->C
+此时执行 x-->z也就是   A-->B
+再执行一个mov(1,y,x,z) 也就是mov(1,C,A,B)  C-->B
+第一个n=2的move正式完成。
+
+第二步：执行A-->C
+
+第三步执行:move(2,y,x,z)  x=A,y=B,z=C  也就是move(2,B,A,C)
+
+此时n=2,x=B,y=A,z=C
+再执行：mov(1,x,z,y) 也就是mov(1,B,C,A) B-->A
+此时执行x-->z 也就是  B-->C
+再执行mov(1,y,x,z) 也就是mov(1,A,B,C)  A-->C
+结束.
+*/
+
+在N != 1 的情况下，每次移动需要三个步骤。
+化整为零。
+
+
+
+
