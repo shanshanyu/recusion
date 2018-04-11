@@ -1,0 +1,8 @@
+void to_binary(int n){  //后序递归
+  int r=n%2;
+  if(n>=2) to_binary(n/2);
+  putchar(r+'0');
+}
+int main(){
+
+}
