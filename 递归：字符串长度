@@ -1,4 +1,4 @@
 int strlen(char *s,int n){
-  if(s[i]) strlen(s,n+1);
+  if(s[n]) strlen(s,n+1);
   else return n;
 }
